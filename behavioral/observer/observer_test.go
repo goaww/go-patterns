@@ -1,11 +1,23 @@
 package observer
 
-import "testing"
+import (
+	"testing"
+	"time"
+)
 
-func TestPublisher_RegisterObserver(t *testing.T) {
+func TestObserver(t *testing.T) {
 	subscriber := NewSubscriber()
 	publisher := NewPublisher()
 	publisher.RegisterObserver(subscriber)
 
-	publisher.Notify()
+	stop := time.NewTimer(10 * time.Second).C
+	tick := time.NewTicker(time.Second).C
+	for {
+		select {
+		case <-stop:
+			return
+		case <-tick:
+			publisher.Notify()
+		}
+	}
 }
