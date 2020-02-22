@@ -14,3 +14,4 @@
 * Favor composition over inheritance.
 * Strive for loosely coupled designs between object that interact
 * Classes should be open for extension, but closed for modification
+* Depend upon abstractions. Do not depend upon concrete classes.
