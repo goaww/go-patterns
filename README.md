@@ -16,3 +16,4 @@
 * Classes should be open for extension, but closed for modification
 * Depend upon abstractions. Do not depend upon concrete classes.
 * Principle of Least Knowledge: talk only to your immediate friends.
+* The Hollywood Principle: Don’t call us, we’ll call you.
