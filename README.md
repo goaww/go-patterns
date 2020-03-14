@@ -17,3 +17,4 @@
 * Depend upon abstractions. Do not depend upon concrete classes.
 * Principle of Least Knowledge: talk only to your immediate friends.
 * The Hollywood Principle: Don’t call us, we’ll call you.
+* Class should have only one reason to change
